@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РВЛ | Админ-панель</title>
+    <link rel="stylesheet" href="ss.style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .admin-page {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .admin-card {
+            max-width: 400px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-lg);
+        }
+        .admin-logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .admin-logo .logo-icon {
+            width: 60px;
+            height: 60px;
+            font-size: 28px;
+            margin: 0 auto 15px;
+        }
+    </style>
+</head>
+<body class="admin-page">
+    <div class="admin-card glass">
+        <div class="admin-logo">
+            <div class="logo-icon">РВЛ</div>
+            <h2>Админ-панель</h2>
+            <p>Демо-режим: admin / rvl2026</p>
+        </div>
+        
+        <form id="adminLoginForm">
+            <div class="form-group">
+                <label>Логин</label>
+                <input type="text" class="form-control" value="admin" required>
+            </div>
+            <div class="form-group">
+                <label>Құпия сөз</label>
+                <input type="password" class="form-control" value="rvl2026" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+                <i class="fas fa-sign-in-alt"></i> Кіру
+            </button>
+            <a href="s.index.html" class="btn btn-outline btn-block mt-3">
+                <i class="fas fa-arrow-left"></i> Басты бетке
+            </a>
+        </form>
+        
+        <div class="admin-demo-note" style="margin-top: 30px; padding: 15px; background: var(--accent-light); border-radius: 10px; font-size: 14px;">
+            <i class="fas fa-info-circle"></i> 
+            Бұл конкурстық жұмыс аясындағы демо-панель. Толық CMS келесі кезеңде іске асырылады.
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('adminLoginForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('🔵 Админ-панельге қош келдіңіз! (Демо режим)');
+            window.location.href = 'dashboard.html';
+        });
+    </script>
+</body>
+</html>

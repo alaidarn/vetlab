@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РВЛ | Байланыс</title>
+    <link rel="stylesheet" href="ss.style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <header class="header">
+        <!-- ... -->
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 data-i18n="contact.page_title">Байланыс және кері байланыс</h1>
+            <div class="breadcrumbs">
+                <a href="s.index.html" data-i18n="nav.home">Басты бет</a> / 
+                <span data-i18n="nav.contact">Байланыс</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT GRID -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-page-grid">
+                <div class="contact-info-card glass">
+                    <h2><i class="fas fa-address-card"></i> <span data-i18n="contact.info.title">Байланыс деректері</span></h2>
+                    
+                    <div class="contact-detail-group">
+                        <h3 data-i18n="contact.head_office">Бас кеңсе</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact.address">Астана, Мәңгілік Ел даңғылы, 12/1</span></p>
+                        <p><i class="fas fa-phone-alt"></i> +7 (777) 673-52-06</p>
+                        <p><i class="fas fa-envelope"></i> info@rvl.kz</p>
+                    </div>
+                    
+                    <div class="contact-detail-group">
+                        <h3 data-i18n="contact.hours_title">Жұмыс кестесі</h3>
+                        <p><i class="fas fa-clock"></i> <span data-i18n="contact.hours">Дүйсенбі - Жұма: 09:00 - 18:00</span></p>
+                    </div>
+                    
+                    <div class="admin-block">
+                        <h4><i class="fas fa-lock"></i> <span data-i18n="contact.admin.title">Админ-панель</span></h4>
+                        <p data-i18n="contact.admin.desc">CMS / контентті басқару жүйесі</p>
+                        <a href="login.html" class="btn btn-outline" data-i18n="contact.admin.btn">Кіру</a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-card glass">
+                    <h2><i class="fas fa-paper-plane"></i> <span data-i18n="contact.form.title">Хабарлама жіберу</span></h2>
+                    
+                    <form id="feedbackForm">
+                        <div class="form-group">
+                            <label data-i18n="contact.form.name">Аты-жөніңіз</label>
+                            <input type="text" name="name" class="form-control" data-i18n-placeholder="contact.form.name" placeholder="Аты-жөніңіз" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label data-i18n="contact.form.email">E-mail</label>
+                            <input type="email" name="email" class="form-control" data-i18n-placeholder="contact.form.email" placeholder="E-mail" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label data-i18n="contact.form.message">Хабарлама</label>
+                            <textarea name="message" class="form-control" rows="5" data-i18n-placeholder="contact.form.message" placeholder="Хабарлама мәтіні..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block" data-i18n="contact.form.send">Жіберу</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- ... -->
+    </footer>
+
+    <script src="ss.script.js"></script>
+</body>
+</html>

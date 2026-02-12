@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="РВЛ сайтын жақсарту бойынша конкурсант ұсыныстары: инновациялық шешімдер, PWA, чат-бот, интерактивті карта.">
+    
+    <title>РВЛ | Ұсыныстар</title>
+    
+    <link rel="stylesheet" href="ss.style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="s.index.html" class="logo">
+                <div class="logo-icon">РВЛ</div>
+                <div class="logo-text">
+                    <span>Республикалық ветеринариялық зертхана</span>
+                    <small>АШМ Ветеринариялық бақылау комитеті</small>
+                </div>
+            </a>
+            
+            <div class="header-actions">
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li><a href="s.index.html">Басты бет</a></li>
+                        <li><a href="about.html">Зертхана</a></li>
+                        <li><a href="services.html">Қызметтер</a></li>
+                        <li><a href="structure.html">Құрылым</a></li>
+                        <li><a href="news.html">Жаңалықтар</a></li>
+                        <li><a href="proposals.html" class="active">Ұсыныстар</a></li>
+                        <li><a href="contact.html">Байланыс</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="kk">ҚАЗ</button>
+                    <button class="lang-btn" data-lang="ru">РУС</button>
+                    <button class="lang-btn" data-lang="en">ENG</button>
+                </div>
+                
+                <a href="login.html" class="admin-icon">
+                    <i class="fas fa-lock"></i>
+                </a>
+                
+                <button class="mobile-toggle">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Ұсыныс</h1>
+            <div class="breadcrumbs">
+                <a href="s.index.html">Басты бет</a> / 
+                <span>Ұсыныстар</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROPOSALS HERO -->
+    <section class="section">
+        <div class="container">
+            <div class="proposals-hero">
+                <div class="proposals-hero-content">
+                    <h2 class="section-title">Сайтты жаңғырту <span class="text-gradient">жобасы</span></h2>
+                    <p class="lead">Бұл бетте конкурс шеңберінде әзірленген инновациялық шешімдер мен ұсыныстар көрсетілген. Барлық идеялар келесі кезеңде іске асырылуы мүмкін.</p>
+                    
+                    <div class="proposal-tagline">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>6 инновациялық шешім · Масштабталатын архитектура · PWA дайын</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INNOVATION PROPOSALS -->
+    <section class="section bg-gradient">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Инновациялар</span>
+                <h2 class="section-title">6 <span class="text-gradient">жаңашыл идея</span></h2>
+            </div>
+            
+            <div class="proposals-grid-full">
+                <!-- 1. Версия для слабовидящих -->
+                <div class="proposal-full-card glass">
+                    <div class="proposal-icon-wrapper">
+                        <i class="fas fa-universal-access"></i>
+                    </div>
+                    <div class="proposal-full-content">
+                        <h3>Көру қабілеті бұзылғандарға арналған нұсқа</h3>
+                        <div class="proposal-tags">
+                            <span>Инклюзивті дизайн</span>
+                            <span>WCAG 2.1</span>
+                            <span>Арнайы мүмкіндіктер</span>
+                        </div>
+                        <p>Сайтта арнайы батырма арқылы қосуға болатын инклюзивті режим. Контрастты түстер, қаріп өлшемін 200% дейін ұлғайту, экранда оқу құралы (дыбыстау) және клавиатурамен толық басқару мүмкіндігі.</p>
+                        <ul class="proposal-features">
+                            <li><i class="fas fa-check"></i> Жоғары контрастты түс схемасы</li>
+                            <li><i class="fas fa-check"></i> Қаріп өлшемін реттеу (100-200%)</li>
+                            <li><i class="fas fa-check"></i> Экранда оқу (Speech Synthesis)</li>
+                            <li><i class="fas fa-check"></i> Клавиатура навигациясы</li>
+                        </ul>
+                        <div class="proposal-tech">
+                            <span>Технологиялар: </span>HTML5, CSS3, Web Speech API, ARIA
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 2. Вет-чатбот -->
+                <div class="proposal-full-card glass">
+                    <div class="proposal-icon-wrapper">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="proposal-full-content">
+                        <h3>Вет-чатбот «РВЛ Помощник»</h3>
+                        <div class="proposal-tags">
+                            <span>Жасанды интеллект</span>
+                            <span>24/7</span>
+                            <span>Telegram/WhatsApp</span>
+                        </div>
+                        <p>ЖИ негізіндегі консультант. Ветеринариялық терминдерге, қызметтерге, бағаларға, биоматериалды тапсыру ережелеріне қатысты сұрақтарға жауап береді. Қарапайым сұрақтарға бірден жауап, күрделі жағдайда маманға байланыстырады.</p>
+                        <ul class="proposal-features">
+                            <li><i class="fas fa-check"></i> 300+ жиі қойылатын сұрақтар базасы</li>
+                            <li><i class="fas fa-check"></i> Талдау нәтижелерін түсіндіру</li>
+                            <li><i class="fas fa-check"></i> Тіркелу және тапсырыс</li>
+                            <li><i class="fas fa-check"></i> Telegram бот интеграциясы</li>
+                        </ul>
+                        <div class="proposal-tech">
+                            <span>Технологиялар: </span>Dialogflow, Node.js, Telegram API
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 3. Интерактивті карта -->
+                <div class="proposal-full-card glass">
+                    <div class="proposal-icon-wrapper">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="proposal-full-content">
+                        <h3>Интерактивті филиалдар картасы</h3>
+                        <div class="proposal-tags">
+                            <span>2GIS</span>
+                            <span>Yandex Maps</span>
+                            <span>Маршрут</span>
+                        </div>
+                        <p>Қазақстан картасында барлық 16 филиалдың орналасуы, жұмыс кестесі, байланыс телефондары, фотосуреттері көрсетілген. Кез келген филиалға маршрут құру, навигаторда ашу мүмкіндігі.</p>
+                        <ul class="proposal-features">
+                            <li><i class="fas fa-check"></i> 2GIS / Yandex Maps API интеграциясы</li>
+                            <li><i class="fas fa-check"></i> Филиалдар бойынша іздеу</li>
+                            <li><i class="fas fa-check"></i> Қазіргі жүктеме (бос/бос емес)</li>
+                            <li><i class="fas fa-check"></i> Маршрут құру</li>
+                        </ul>
+                        <div class="proposal-tech">
+                            <span>Технологиялар: </span>Yandex Maps API, 2GIS API, JavaScript
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 4. PWA қосымшасы -->
+                <div class="proposal-full-card glass">
+                    <div class="proposal-icon-wrapper">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="proposal-full-content">
+                        <h3>PWA (Progressive Web App)</h3>
+                        <div class="proposal-tags">
+                            <span>Офлайн режим</span>
+                            <span>Push-хабарландыру</span>
+                            <span>Үстелге қосу</span>
+                        </div>
+                        <p>Веб-сайтты нақты мобильді қосымшаға айналдыру. Google Play/App Store арқылы өтпей-ақ, телефонның басты экранына қоюға болады. Офлайн режимде жаңалықтарды, қызметтерді көру мүмкіндігі.</p>
+                        <ul class="proposal-features">
+                            <li><i class="fas fa-check"></i> Интернетсіз жұмыс (Service Worker)</li>
+                            <li><i class="fas fa-check"></i> Push-хабарландырулар (нәтиже дайын)</li>
+                            <li><i class="fas fa-check"></i> Жылдам жүктеу (Cache API)</li>
+                            <li><i class="fas fa-check"></i> Басты экранға қосу</li>
+                        </ul>
+                        <div class="proposal-tech">
+                            <span>Технологиялар: </span>Service Worker, Manifest, IndexedDB
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 5. Қауіпсіздік -->
+                <div class="proposal-full-card glass">
+                    <div class="proposal-icon-wrapper">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="proposal-full-content">
+                        <h3>Кеңейтілген қауіпсіздік жүйесі</h3>
+                        <div class="proposal-tags">
+                            <span>2FA</span>
+                            <span>XSS қорғанысы</span>
+                            <span>SQL инъекциясы</span>
+                        </div>
+                        <p>Мемлекеттік веб-ресурстарға қойылатын талаптардан тыс қосымша қорғаныс шаралары. Админ-панельге кіруде екі факторлы аутентификация, сессияларды басқару, шабуылдарды анықтау жүйесі.</p>
+                        <ul class="proposal-features">
+                            <li><i class="fas fa-check"></i> Екі факторлы аутентификация (Google Authenticator)</li>
+                            <li><i class="fas fa-check"></i> XSS және SQL инъекциясына толық қарсылық</li>
+                            <li><i class="fas fa-check"></i> Күдікті әрекеттерді бұғаттау</li>
+                            <li><i class="fas fa-check"></i> Тіркеу журналы (Audit Log)</li>
+                        </ul>
+                        <div class="proposal-tech">
+                            <span>Технологиялар: </span>CSRF-токендер, Content-Security-Policy, Helmet.js
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 6. SEO-оптимизация -->
+                <div class="proposal-full-card glass">
+                    <div class="proposal-icon-wrapper">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="proposal-full-content">
+                        <h3>Кеңейтілген SEO және микродеректер</h3>
+                        <div class="proposal-tags">
+                            <span>Schema.org</span>
+                            <span>Open Graph</span>
+                            <span>Twitter Cards</span>
+                        </div>
+                        <p>Іздеу жүйелерінде жоғары орын алу үшін семантикалық разметка, микродеректер, құрылымдық мәліметтер. Әлеуметтік желілерде тартымды көрініс (Open Graph, Twitter Cards).</p>
+                        <ul class="proposal-features">
+                            <li><i class="fas fa-check"></i> Schema.org (Organization, MedicalOrganization)</li>
+                            <li><i class="fas fa-check"></i> Google Rich Snippets</li>
+                            <li><i class="fas fa-check"></i> XML Sitemap, robots.txt</li>
+                            <li><i class="fas fa-check"></i> Core Web Vitals оңтайландыру</li>
+                        </ul>
+                        <div class="proposal-tech">
+                            <span>Технологиялар: </span>JSON-LD, микроформаттар, Lighthouse
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="proposal-summary glass">
+                <i class="fas fa-lightbulb"></i>
+                <div>
+                    <h4>Қорытынды</h4>
+                    <p>Барлық ұсыныстар біртұтас архитектурада жұмыс істейді және сайттың қазіргі нұсқасына кезең-кезеңімен енгізуге дайын. Әрбір модуль жеке тестіленген, құжаттандырылған және масштабталады.</p>
+                    <p class="proposal-author">— Конкурсант Нұрдәурен</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMPLEMENTATION PLAN -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Енгізу <span class="text-gradient">жоспары</span></h2>
+            
+            <div class="implementation-timeline">
+                <div class="timeline-step glass">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>1-кезең (негізгі)</h4>
+                        <p>Интерактивті карта, SEO-оптимизация, қауіпсіздік шаралары</p>
+                        <span class="step-time">2 апта</span>
+                    </div>
+                </div>
+                
+                <div class="timeline-step glass">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>2-кезең</h4>
+                        <p>PWA қосымшасы, көру қабілеті бұзылғандарға арналған нұсқа</p>
+                        <span class="step-time">3 апта</span>
+                    </div>
+                </div>
+                
+                <div class="timeline-step glass">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>3-кезең</h4>
+                        <p>Вет-чатбот, кеңейтілген админ-панель</p>
+                        <span class="step-time">4 апта</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- FOOTER коды жоғарыдағыдай -->
+    </footer>
+
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="ss.script.js"></script>
+</body>
+</html>        	
